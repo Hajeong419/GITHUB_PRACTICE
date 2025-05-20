@@ -1,0 +1,21 @@
+#git 설치 확인
+git --version
+
+#터미널에서 폴더 만들기
+mkdir practice-folder
+cd practice-folder
+echo "Hello GitHub!" > hello.txt
+
+#Git 초기화
+git init
+
+#GitHub 저장소와 연결
+git remote add origin https://github.com/Hajeong419/GITHUB_PRACTICE
+
+#파일 스테이징&커밋
+git add .
+git commit -m "첫 커밋 연습"
+
+#main 브랜치로 푸시
+git branch -M main
+git push -u origin main
